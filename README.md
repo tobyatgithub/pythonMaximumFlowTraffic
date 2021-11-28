@@ -1,14 +1,27 @@
-# pythonMaximumFlowTraffic
-
-An attempt to solve/improve traffic jam by using network algorithm (Ford-Fulkerson).
-
-## Table of Contents
+# python Maximum Flow Traffic
 
 ## Introduction
 
-In thie repo, we try to model traffic optimization as a "network flow" problem, and solve it using an algorithm called the Ford-Fulkerson Algorithm[1].
+> Introduction = what we wanna do
+
+Driving is such a meaningful and pleasant event. However, driving in cities usually are nightmares. It doesn't have to be that way. We must be able to do better.
+
+This project is an attempt to solve/improve traffic jam by using network algorithm (Ford-Fulkerson).
+
+In thie repo, we try to investigate a methodology to model traffic optimization as a "network flow" problem. And we later show how to solve it using an algorithm called the Ford-Fulkerson Algorithm[1]. By "solve it", we mean providing a deterministic solution for problems such that "given a fixed amount of resource, which design of roads will maximize the total amount of traffic per unit time".
+
+Group members:
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Approach](#approach)
+- [Application and Scope](#Application-and-scope)
+- [Reference and Resources](#reference-and-resources)
 
 ## Approach
+
+> approach = how we gonna create the solution
 
 ![add image](https://github.com/tobyatgithub/pythonMaximumFlowTraffic/blob/main/img/whiteBoard11272021.jpg?raw=true)
 figure 1 - white board from 1st brain-storm.
@@ -28,7 +41,13 @@ figure 1 - white board from 1st brain-storm.
 - We will assume each source has unlimited supply (we later can see there is an easy way to regulate that) to simulate the worst case and explore the bottleneck of the graph. And we will make the same assumption for each sink.
 - The overall goal of this traffic optimization is to provide a tooling for comparing different graph designs (which stands for different road/bridge design for traffic.)
 
+## Application and Scope
+
+> Application and Scope = how to apply the solution
+
 ## Reference and Resources
+
+> Reference = something we find useful
 
 [1] [Textbook about Flow Problems](https://www-sop.inria.fr/members/Frederic.Havet/Cours/flow.pdf)
 

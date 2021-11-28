@@ -43,7 +43,7 @@ figure 1 - white board from 1st brain-storm.
 
 ## Application and Scope
 
-> Application and Scope = how to apply the solution
+> Application and Scope = how to apply our solution
 
 ## Reference and Resources
 

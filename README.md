@@ -1,4 +1,4 @@
-# python Maximum Flow Traffic
+# Python Maximum Flow Traffic
 
 ## Introduction
 
@@ -13,13 +13,26 @@ This project attempts to solve/improve traffic jams by using a network algorithm
 More specifically, our methodology here is to model traffic optimization as a "network flow" problem and solve it using an algorithm called the Ford-Fulkerson Algorithm[1]. By "solve it" we mean providing a deterministic solution for problems such that "given a fixed amount of resource, which design of roads will maximize the total amount of traffic per unit time."
 
 Group members:
+@BoxuanHu
+@LanglunLuo
+@LuyiXiao
+@FangyuanHuang
 
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Installation and Usage](#install-and-use)
 - [Approach](#approach)
 - [Application and Scope](#Application-and-scope)
 - [Reference and Resources](#reference-and-resources)
+
+## Installation and Usage
+
+```
+git clone https://github.com/tobyatgithub/pythonMaximumFlowTraffic.git
+cd pythonMaximumFlowTraffic/main
+python test.py
+```
 
 ## Approach
 
@@ -47,6 +60,10 @@ figure 1 - white board from 1st brain-storm.
 ## Application and Scope
 
 > Application and Scope = how to apply our solution
+
+In the `/main` folder, you will find the python code that is based on Ford-Forkson algorithm. In this code, our algorithm will take in a graph as a input, and return the max traffic flow allowed between the source and sink.
+
+We picked [TODO] as the searching method, and thus the overall time complexity shall be [TODO]
 
 ## Reference and Resources
 

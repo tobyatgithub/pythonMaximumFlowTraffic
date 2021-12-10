@@ -1,0 +1,86 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600" style="background-color:lightblue" 
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+  <desc><![CDATA[
+    Template for Drawing on a numbered 600 by 600 Grid
+    
+    Jay Nick
+    steamcoded.org
+  ]]>
+  </desc>
+
+  <style type="text/css"><![CDATA[
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    .numbers {fill:#00c;font-size:14px;font-family:'Open Sans', Arial, sans-serif;}
+    .sb {fill:none;stroke:black;stroke-width:2px;}
+    .title {fill:navy;stroke:none;font-size:50px;text-anchor:middle;font-family:'Open Sans', Arial, sans-serif;}
+    .c1 {fill:rgb(107,53,11);stroke:none;}  .c2 {fill:rgb(225,157,86);stroke:none;} .s1 {fill:none;stroke:rgb(107,53,11);}
+  ]]>
+  </style>
+  
+  <g style="display:none">
+    <path d="M0,300L600,300" style="fill:none;stroke:royalblue;stroke-dasharray:0.2,9.6,0.2,0;stroke-width:600px;"/>
+    <path d="M300,0L300,600" style="fill:none;stroke:royalblue;stroke-dasharray:0.2,9.6,0.2,0;stroke-width:600px;"/>
+    <path d="M0,300L600,300" style="fill:none;stroke:royalblue;stroke-dasharray:0.5,99,0.5,0;stroke-width:600px;"/>
+    <path d="M300,0L300,600" style="fill:none;stroke:royalblue;stroke-dasharray:0.5,99,0.5,0;stroke-width:600;px"/>
+    <g transform="translate(0,14)" class="numbers" style="text-anchor:middle;"> <text x="100">100</text> <text x="200">200</text> <text x="300">300</text> <text x="400">400</text> <text x="500">500</text> </g>
+    <g transform="translate(3,5)" class="numbers" style="text-anchor:start;"> <text y="100">100</text> <text y="200">200</text> <text y="300">300</text> <text y="400">400</text> <text y="500">500</text> </g>
+  </g>
+  
+  <g style="opacity:0.5;" class="sb">
+    <!-- insert SVG elements here -->
+
+
+
+  </g>
+
+
+  <circle cx="300" cy="480" r="210" style="fill:white;stroke:black;stroke-width:2px" />
+
+  <rect x="350" y="520" width="50" height="100" style="fill:darkgray;stroke:black;stroke-width:2px" />
+
+  <rect x="200" y="520" width="50" height="100" style="fill:darkgray;stroke:black;stroke-width:2px" />
+  <circle cx="375" cy="510" r="38" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="375" cy="505" r="40" style="fill:white" />
+
+ 
+  <circle cx="225" cy="510" r="38" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="225" cy="505" r="40" style="fill:white" />
+  
+
+  <ellipse cx="185" cy="280" rx="40" ry="60" style="fill:darkgray;stroke:black;stroke-width:2px" transform="rotate(50,190,270)" />
+  <ellipse cx="415" cy="280" rx="40" ry="60" style="fill:darkgray;stroke:black;stroke-width:2px" transform="rotate(-50,410,270)" />
+
+  <ellipse cx="185" cy="280" rx="20" ry="30" style="fill:pink;stroke:black;stroke-width:2px" transform="rotate(50,190,270)" />
+  <ellipse cx="415" cy="280" rx="20" ry="30" style="fill:pink;stroke:black;stroke-width:2px" transform="rotate(-50,410,270)" />
+
+  <ellipse cx="300" cy="350" rx="120" ry="140" style="fill:darkgray;stroke:black;stroke-width:2px" />
+
+  <circle cx="250" cy="350" r="20" />
+  <circle cx="350" cy="350" r="20" />
+
+  <circle cx="300" cy="420" r="30" />
+  <circle cx="300" cy="410" r="30" style="fill:darkgray" />
+  <rect x="298" y="442" width="5" height="45" />
+
+
+
+  <circle cx="300" cy="160" r="35" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="235" cy="185" r="35" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="365" cy="185" r="35" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="250" cy="250" r="35" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="350" cy="250" r="35" style="fill:white;stroke:black;stroke-width:2px" />
+
+
+  <circle cx="300" cy="250" r="30" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="360" cy="210" r="30" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="240" cy="210" r="30" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="240" cy="210" r="30" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="280" cy="180" r="30" style="fill:white;stroke:black;stroke-width:2px" />
+  <circle cx="323" cy="180" r="28" style="fill:white;stroke:black;stroke-width:2px" />
+  <ellipse cx="300" cy="210" rx="70" ry="50" style="fill:white" />
+
+ 
+
+ </svg>

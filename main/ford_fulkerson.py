@@ -54,10 +54,11 @@ def fordBFS(cur_graph: Graph, source: str, sink: str) -> (bool, dict):
 
 
 # test ford fulkerson
-def fordFulkerson(graph: Graph, source: str, sink: str) -> [int, float]:
+def fordFulkerson(graph: Graph, source: str,
+                  sink: str) -> ([int, float], Graph):
     # part 1, init and pre-construction
     flag = True
-    cur_graph = graph
+    cur_graph, maxFlowGraph = graph, Graph()
     maxFlow = 0
 
     # keep search for new pathes from source to the sink
@@ -83,6 +84,14 @@ def fordFulkerson(graph: Graph, source: str, sink: str) -> [int, float]:
             )
         maxFlow += local_maxFlow
 
+        # update maxFlow graph after knowing the real local max flow.
+        cur = sink
+        while cur != source:
+            parent = parentTracker.get(cur, source)
+            cur_weight = maxFlowGraph.get_weight(parent, cur)
+            maxFlowGraph.add_edge(parent, cur, cur_weight + local_maxFlow)
+            cur = parent
+
         # update the graph for the next iteration
         cur = sink
         while cur != source:
@@ -90,7 +99,7 @@ def fordFulkerson(graph: Graph, source: str, sink: str) -> [int, float]:
             old_weight = cur_graph.get_weight(fromNode=parent, toNode=cur)
             cur_graph.add_edge(parent, cur, old_weight - local_maxFlow)
             cur = parent
-    return maxFlow
+    return maxFlow, maxFlowGraph
 
 
 ## test ff

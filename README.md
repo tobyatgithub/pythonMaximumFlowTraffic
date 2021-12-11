@@ -72,3 +72,5 @@ We picked [TODO] as the searching method, and thus the overall time complexity s
 [1] [Textbook about Flow Problems](https://www-sop.inria.fr/members/Frederic.Havet/Cours/flow.pdf)
 
 [2] [Lecture 20, Max Flow and Augment Path Algorithm](http://www.ifp.illinois.edu/~angelia/ge330fall09_maxflowl20.pdf)
+
+[3] [Stanford Network Flow Porbelm](https://web.stanford.edu/class/cs97si/08-network-flow-problems.pdf)

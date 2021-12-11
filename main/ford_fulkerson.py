@@ -45,10 +45,10 @@ def fordBFS(cur_graph: Graph, source: str, sink: str) -> (bool, dict):
 
 
 # test ford fulkerson
-def fordFulkerson(graph: Graph, source: str, sink: str) -> ([int, float], Graph):
+def fordFulkerson(in_graph: Graph, source: str, sink: str) -> ([int, float], Graph):
     # part 1, init and pre-construction
     flag = True
-    cur_graph, maxFlowGraph = graph, Graph()
+    cur_graph, maxFlowGraph = Graph(in_graph.graph), Graph()
     maxFlow = 0
 
     # keep search for new pathes from source to the sink
@@ -92,20 +92,9 @@ def fordFulkerson(graph: Graph, source: str, sink: str) -> ([int, float], Graph)
     return maxFlow, maxFlowGraph
 
 
-## test ff
-test1 = fordFulkerson(g, "A", "F")
-print(test1)
-
 ## double cross verification using google or-tools
 """From Taha 'Introduction to Operations Research', example 6.4-2."""
 from ortools.graph import pywrapgraph
-
-# Define three parallel arrays: start_nodes, end_nodes, and the capacities
-# between each pair. For instance, the arc from node 0 to node 1 has a
-# capacity of 20.
-start_nodes = [0, 0, 0, 1, 1, 2, 2, 3, 3]
-end_nodes = [1, 2, 3, 2, 4, 3, 4, 2, 4]
-capacities = [20, 30, 10, 40, 30, 10, 20, 5, 20]
 
 
 def OR_maxFlow(
@@ -148,4 +137,39 @@ def OR_maxFlow(
     return max_flow
 
 
-OR_maxFlow(0, 4, start_nodes, end_nodes, capacities)
+# # Define three parallel arrays: start_nodes, end_nodes, and the capacities
+# # between each pair. For instance, the arc from node 0 to node 1 has a
+# # capacity of 20.
+# start_nodes = [0, 0, 0, 1, 1, 2, 2, 3, 3]
+# end_nodes = [1, 2, 3, 2, 4, 3, 4, 2, 4]
+# capacities = [20, 30, 10, 40, 30, 10, 20, 5, 20]
+
+# OR_maxFlow(0, 4, start_nodes, end_nodes, capacities)
+
+
+## test ff
+test1 = fordFulkerson(g, "A", "F")
+print(test1)
+
+print("**" * 10)
+
+
+def turnGraphToNodesLists(graph):
+    vertices = graph.get_vertexs()
+    s_node, e_node, cap = [], [], []
+
+    for index, vertex in enumerate(vertices):
+        neightbors = graph.get_neighbors(vertex)
+        for node in neightbors:
+            s_node.append(index)
+            e_node.append(vertices.index(node))
+            cap.append(graph.get_weight(vertex, node))
+    return s_node, e_node, cap
+
+
+# # web example with result from 0 to 4 == 23.
+# start_nodes = [0, 0, 0, 1, 1, 2, 2, 3, 3]
+# end_nodes = [1, 2, 3, 2, 4, 3, 4, 2, 4]
+# capacities = [20, 30, 10, 40, 30, 10, 20, 5, 20]
+start_nodes, end_nodes, capacities = turnGraphToNodesLists(g)
+OR_maxFlow(0, 5, start_nodes, end_nodes, capacities)

@@ -56,7 +56,7 @@ class Graph:
     def __repr__(self):
         if self._size == 0:
             print("This is an empty graph.")
-        print(self.graph)
+        return str(self.graph)
 
     def __str__(self):
         if self._size == 0:

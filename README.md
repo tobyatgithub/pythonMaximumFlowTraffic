@@ -57,6 +57,12 @@ figure 1 - white board from 1st brain-storm.
 - We later can see there exists an easy way to regulate the unlimited supply from sources and demand from sinks.
 - The overall goal of this traffic optimization is to provide tooling for comparing different graph designs (which stands for different road/bridge designs for traffic.)
 
+## Code Solution Usage and Correctness
+
+Correctness:
+
+We cross verify by using `google or-tools`
+
 ## Application and Scope
 
 > Application and Scope = how to apply our solution

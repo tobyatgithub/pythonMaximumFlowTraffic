@@ -1,0 +1,97 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "name": "Waterfront",
+      "symbol": "A",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.285622, -123.111862]
+      }
+    },
+    {
+      "name": "South Granville",
+      "symbol": "B",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.262959, -123.138809]
+      }
+    },
+    {
+      "name": "Mount Pleasant",
+      "symbol": "C",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.26237, -123.06788]
+      }
+    },
+    {
+      "name": "PNE",
+      "symbol": "D",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.28117, -123.043907]
+      }
+    },
+    {
+      "name": "Marin Gate",
+      "symbol": "E",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.21051, -123.11655]
+      }
+    },
+    {
+      "name": "Brentwood",
+      "symbol": "F",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.27333, -122.99208]
+      }
+    },
+    {
+      "name": "Metrotown",
+      "symbol": "G",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.22544, -123.00728]
+      }
+    },
+    {
+      "name": "Airport",
+      "symbol": "H",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.192879, -123.16066]
+      }
+    },
+    {
+      "name": "Richmood",
+      "symbol": "I",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.16574, -123.13861]
+      }
+    },
+    {
+      "name": "Temp",
+      "symbol": "J",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.13315, -123.12274]
+      }
+    },
+    {
+      "name": "New West",
+      "symbol": "K",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [49.20713, -122.917603]
+      }
+    }
+  ]
+}

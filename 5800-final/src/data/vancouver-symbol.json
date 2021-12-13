@@ -1,0 +1,89 @@
+{
+  "lines": [
+    {
+      "start": "A",
+      "end": [
+        { "name": "B", "weight": 26 },
+        { "name": "C", "weight": 34 },
+        { "name": "D", "weight": 28 }
+      ]
+    },
+    {
+      "start": "B",
+      "end": [
+        { "name": "A", "weight": 38 },
+        { "name": "C", "weight": 29 },
+        { "name": "E", "weight": 42 }
+      ]
+    },
+    {
+      "start": "C",
+      "end": [
+        { "name": "A", "weight": 23 },
+        { "name": "B", "weight": 25 },
+        { "name": "F", "weight": 42 },
+        { "name": "G", "weight": 37 }
+      ]
+    },
+    {
+      "start": "D",
+      "end": [
+        { "name": "A", "weight": 30 },
+        { "name": "F", "weight": 38 }
+      ]
+    },
+    {
+      "start": "E",
+      "end": [
+        { "name": "B", "weight": 41 },
+        { "name": "H", "weight": 38 },
+        { "name": "I", "weight": 22 },
+        { "name": "J", "weight": 33 }
+      ]
+    },
+    {
+      "start": "F",
+      "end": [
+        { "name": "C", "weight": 48 },
+        { "name": "D", "weight": 38 },
+        { "name": "G", "weight": 44 }
+      ]
+    },
+    {
+      "start": "G",
+      "end": [
+        { "name": "C", "weight": 34 },
+        { "name": "F", "weight": 44 },
+        { "name": "J", "weight": 44 },
+        { "name": "K", "weight": 50 }
+      ]
+    },
+    {
+      "start": "H",
+      "end": [{ "name": "E", "weight": 38 }]
+    },
+    {
+      "start": "I",
+      "end": [
+        { "name": "E", "weight": 28 },
+        { "name": "J", "weight": 23 }
+      ]
+    },
+    {
+      "start": "J",
+      "end": [
+        { "name": "E", "weight": 27 },
+        { "name": "G", "weight": 41 },
+        { "name": "I", "weight": 26 },
+        { "name": "K", "weight": 61 }
+      ]
+    },
+    {
+      "start": "K",
+      "end": [
+        { "name": "G", "weight": 47 },
+        { "name": "J", "weight": 52 }
+      ]
+    }
+  ]
+}

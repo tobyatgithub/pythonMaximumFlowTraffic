@@ -1,11 +1,15 @@
 .leaflet-container {
-  width: 57%;
-  height: 53vh;
+  width: 90%;
+  height: 70vh;
 }
 
 .button {
-  width: 57%;
-  height: 5vh;
+  width: 5%;
+  height: 70vh;
   color: black;
   background-color: green;
+}
+.rowC {
+  display: flex;
+  flex-direction: row;
 }

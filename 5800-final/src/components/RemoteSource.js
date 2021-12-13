@@ -39,7 +39,7 @@ export default function RemoteSource() {
   //   );
 
   return (
-    <MapContainer center={[52.6376, -1.135171]} zoom={12}>
+    <MapContainer center={[52.6376, -1.165171]} zoom={4}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
